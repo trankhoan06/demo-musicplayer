@@ -3,71 +3,71 @@ const songs=[
         id:0,
         name:'chịu cách mình nói thua',
         singer: 'ryder',
-        path: 'acess/img/ChiuCachMinhNoiThua-RHYDERCoolkidBAN-12449134.mp3',
-        image: 'acess/img/download.jpg'
+        path: 'ChiuCachMinhNoiThua-RHYDERCoolkidBAN-12449134.mp3',
+        image: 'download.jpg'
     },
     {
         id:1,
         name:'chúng ta không thuộc về nhau',
         singer: 'sơn tùng mtp',
-        path: 'acess/img/ChungTaKhongThuocVeNhau-SonTungMTP-4528181.mp3',
-        image: 'acess/img/1503305440699_640.jpg'
+        path: 'ChungTaKhongThuocVeNhau-SonTungMTP-4528181.mp3',
+        image: '1503305440699_640.jpg'
     },
     {
         id:2,
         name:'nhắn nhủ',
         singer: 'ronboogz',
-        path: 'acess/img/NhanNhu-Ronboogz-12896660.mp3',
-        image: 'acess/img/cde3e519a909b44385c220c8ad6b92bc.jpg'
+        path: 'NhanNhu-Ronboogz-12896660.mp3',
+        image: 'cde3e519a909b44385c220c8ad6b92bc.jpg'
     },
     {
         id:3,
         name:'loi nhoi',
         singer: 'WREN EVANS',
-        path: 'acess/img/ToTeTi-WrenEvans-13082104.mp3',
-        image: 'acess/img/elleman-Wren-Evans-ra-mat-album-Loi-Choi_03-2048x2048-1.jpeg'
+        path: 'ToTeTi-WrenEvans-13082104.mp3',
+        image: 'elleman-Wren-Evans-ra-mat-album-Loi-Choi_03-2048x2048-1.jpeg'
     },
     {
         id:4,
         name:'buồn hay vui',
         singer: 'obito',
-        path: 'acess/img/BuonHayVuiFeatRptMckObitoRonboogz-VSOULRPTMCKObitoRonboogz-13159599.mp3',
-        image: 'acess/img/1703492891550_640.jpg'
+        path: 'BuonHayVuiFeatRptMckObitoRonboogz-VSOULRPTMCKObitoRonboogz-13159599.mp3',
+        image: '1703492891550_640.jpg'
     },
     {
         id:5,
         name:'nếu lúc đó',
         singer: 'tlinh',
-        path: 'acess/img/NeuLucDo-tlinh2pillz-8783613.mp3',
-        image: 'acess/img/1677482230509_640.jpg'
+        path: 'NeuLucDo-tlinh2pillz-8783613.mp3',
+        image: '1677482230509_640.jpg'
     },
     {
         id:6,
         name:'thằng điên',
         singer: 'JustaTee-PhuongLy',
-        path: 'acess/img/ThangDienLofiVersion-JustaTeePhuongLyNSRecords-7611741.mp3',
-        image: 'acess/img/artworks-000437920515-uq0j2a-t500x500.jpg'
+        path: 'ThangDienLofiVersion-JustaTeePhuongLyNSRecords-7611741.mp3',
+        image: 'artworks-000437920515-uq0j2a-t500x500.jpg'
     },
     {
         id:7,
         name:'tại vì sao',
         singer: 'MCK',
-        path: 'acess/img/jibj864m97.mp3',
-        image: 'acess/img/1679563297490_640.jpg'
+        path: 'jibj864m97.mp3',
+        image: '1679563297490_640.jpg'
     },
     {
         id:8,
         name:'Chỉ cần được ngồi đây với em',
         singer: 'D.Kies',
-        path: 'acess/img/ChiCanDuocNgoiDayVoiEm-DKies-12071935.mp3',
-        image: 'acess/img/ccf5db8786a4143b7defb0e35760ac07.jpg'
+        path: 'ChiCanDuocNgoiDayVoiEm-DKies-12071935.mp3',
+        image: 'ccf5db8786a4143b7defb0e35760ac07.jpg'
     },
     {
         id:9,
         name:'muốn nói với em',
         singer: 'DT Tập Rap ft Mai Xuân Thứ',
-        path: 'acess/img/MuonNoiVoiEm-TTeam-6288870.mp3',
-        image: 'acess/img/29bf1c15a2aeacf72a2fa1e84d92f3e9.jpg'
+        path: 'MuonNoiVoiEm-TTeam-6288870.mp3',
+        image: '29bf1c15a2aeacf72a2fa1e84d92f3e9.jpg'
     },
 ]
 let isVolume=true;
