@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    background-image: url(acess/img/pexels-photo-414171.jpeg);
+}
+.iconVolume{
+    padding: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.volume{
+    width: 100px;
+    display: none;
+}
+.iconVolume:hover ~ .volume{
+    display: block;
+}
+.volume:hover{
+    display: block;
+}
+.dashboard{
+    color: red;
+    text-align: center;
+    font-size: 15px;
+}
+.song-string{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+.song-main{
+    width: 100%;
+    right: 50%;
+    transform: translate(50%, 0);
+    max-width: 500px;
+    position: fixed;
+    background-color: #fff;
+}
+.songImg{
+    display: flex;
+    justify-content: center;
+    transform: rotate(360deg);
+}
+.song-img{
+    margin: 30px 0;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+.songRapViet{
+    width: 100%;
+    border-radius: 50%;
+}
+.song-control{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px 0;
+}
+.songControl{
+    display: block;
+    padding: 0 25px;
+    cursor: pointer;
+    size: 20px;
+}
+.songRun{
+    width: 86%;
+    height: 5px;
+    border-radius: 6px;
+    background-color: #F8F8FF;
+    margin-bottom:20px ;
+}
+.songControl.active{
+    color: red;
+}
+.songName.active{
+    background: red;
+}
+.playLists{
+    background-color: #fff;
+    margin-top: 460px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 500px;
+    width: 100%;    
+     overflow: auto;
+     height: 100vh;
+}
+.song-run{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.animation{
+    animation: __route 10s linear  infinite;
+    animation-play-state: paused;
+}
+@keyframes __route {
+    from{
+        transform: rotate(-360deg);
+    }   
+    to{
+        transform: rotate(360deg);
+    }
+}

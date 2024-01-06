@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="musicPlayer.css" />
+    <link rel="stylesheet" href="acess/css/themify-icons.css" />
+    <title>zingmp3</title>
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <div class="song-main">
+          <div class="icon-volume" style="display: flex">
+            <i class="iconVolume ti-volume"></i>
+            <input class="volume" type="range" value="100" />
+          </div>
+          <div class="dashboard">New playing:</div>
+          <div class="song-string">String 67th & 9th</div>
+          <div class="songImg">
+            <div class="song-img">
+              <img
+                class="songRapViet animation"
+                src="acess/img/ab67616d0000b273a4183dc7967fbc7e3ed6d20f.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="song-control">
+            <div class="songControl load ti-back-right"></div>
+            <div class="songControl back ti-control-skip-backward"></div>
+            <div class="songControl playing ti-control-play"></div>
+            <div class="songControl next ti-control-skip-forward"></div>
+            <div class="songControl backMusic ti-control-shuffle"></div>
+          </div>
+          <div class="song-run">
+            <input class="songRun" type="range" value="0" />
+            <audio class="audio" src=""></audio>
+          </div>
+        </div>
+      </section>
+      <section style="display: flex; justify-content: center">
+        <div class="playLists"></div>
+      </section>
+    </div>
+  </body>
+  <script src="musicPlayer.js"></script>
+</html>
