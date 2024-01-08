@@ -200,13 +200,15 @@ function handlesong(id){
 function getPlaying(){
     if(isPlay){
         isPlay=false,
-        controlPlaying.classList.add('fa-play')
+        controlPlaying.classList.remove('fa-play')
+        controlPlaying.classList.add('fa-pause')
         imgPlaylist.style.animationPlayState ='running',
     audio.play()
     }
     else{
         isPlay=true,
-    controlPlaying.classList.remove('fa-play')
+    controlPlaying.classList.add('fa-play')
+    controlPlaying.classList.remove('fa-pause')
     audio.pause()
     imgPlaylist.style.animationPlayState ='paused'
     }
