@@ -158,8 +158,24 @@ function handle(){
             audio.volume=0;
             iVolume.value=0
             iconVolume.classList.remove('fa-volume-high')
+            iconVolume.classList.add( 'fa-volume-xmark')
+        }
+        else{
+            isVolumeValue=true
+            audio.volume=1;
+            iVolume.value=100;
+            iconVolume.classList.remove( 'fa-volume-xmark')
+            iconVolume.classList.add('fa-volume-high')
+        }
+    }
+    iconVolume.onclick=function(){
+        if(isVolumeValue){
+            isVolumeValue=false
+            audio.volume=0;
+            iVolume.value=0
+            iconVolume.classList.remove('fa-volume-high')
             iconVolume.classList.remove('fa-volume-low')
-             iconVolume.classList.remove('fa-volume-high')
+             iconVolume.classList.remove('fa-volume-off')
             iconVolume.classList.add( 'fa-volume-xmark')
         }
         else{
@@ -188,7 +204,6 @@ if(audio.volume===0){
     iconVolume.classList.remove('fa-volume-high')
 iconVolume.classList.remove('fa-volume-off')
 iconVolume.classList.remove('fa-volume-low')
-    iconVolume.classList.remove( 'fa-volume-xmark')
 }      
 }
     songRun.onchange=function(){
