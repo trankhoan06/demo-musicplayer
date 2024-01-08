@@ -75,19 +75,21 @@ const songs=[
         singer: ' Đen ft. Phương Anh Đào',
         path: 'videoplayback-51.6-296.8.mp3',
         image: 'artworks-KmWKZNH8tAE63LFz-9UiezA-t500x500.jpg'
-    },{
+    },
+    {
         id:11,
         name:'Sợ ngày mai em đi mất',
         singer: 'Khải Đăng Ft Đạt G ',
         path: 'NgayMaiEmDiMat-KhaiDangDatG-7747861.mp3',
         image: '1661571586563_640.jpg'
-    },{
+    },
+    {
         id:12,
         name:'Một vòng Việt Nam',
         singer: 'Tùng Dương',
         path: 'MotVongVietNam-TungDuong-12080111.mp3',
         image: 'maxresdefault.jpg'
-    },
+    }
 ]
 let isVolume=true;
 let isPlay=true;
