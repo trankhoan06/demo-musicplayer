@@ -158,6 +158,8 @@ function handle(){
             audio.volume=0;
             iVolume.value=0
             iconVolume.classList.remove('fa-volume-high')
+            iconVolume.classList.remove('fa-volume-low')
+             iconVolume.classList.remove('fa-volume-high')
             iconVolume.classList.add( 'fa-volume-xmark')
         }
         else{
