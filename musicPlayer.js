@@ -1,56 +1,56 @@
 const songs=[
     {
         id:0,
-        name:'chịu cách mình nói thua',
-        singer: 'ryder',
+        name:'Chịu cách mình nói thua',
+        singer: 'Ryder',
         path: 'ChiuCachMinhNoiThua-RHYDERCoolkidBAN-12449134.mp3',
         image: 'download.jpg'
     },
     {
         id:1,
-        name:'chúng ta không thuộc về nhau',
-        singer: 'sơn tùng mtp',
+        name:'Chúng ta không thuộc về nhau',
+        singer: 'Sơn tùng mtp',
         path: 'ChungTaKhongThuocVeNhau-SonTungMTP-4528181.mp3',
         image: '1503305440699_640.jpg'
     },
     {
         id:2,
-        name:'nhắn nhủ',
-        singer: 'ronboogz',
+        name:'Nhắn nhủ',
+        singer: 'Ronboogz',
         path: 'NhanNhu-Ronboogz-12896660.mp3',
         image: 'cde3e519a909b44385c220c8ad6b92bc.jpg'
     },
     {
         id:3,
-        name:'loi nhoi',
+        name:'Loi nhoi',
         singer: 'WREN EVANS',
         path: 'ToTeTi-WrenEvans-13082104.mp3',
         image: 'elleman-Wren-Evans-ra-mat-album-Loi-Choi_03-2048x2048-1.jpeg'
     },
     {
         id:4,
-        name:'buồn hay vui',
-        singer: 'obito',
+        name:'Buồn hay vui',
+        singer: 'Obito',
         path: 'BuonHayVuiFeatRptMckObitoRonboogz-VSOULRPTMCKObitoRonboogz-13159599.mp3',
         image: '1703492891550_640.jpg'
     },
     {
         id:5,
-        name:'nếu lúc đó',
-        singer: 'tlinh',
+        name:'Nếu lúc đó',
+        singer: 'Tlinh',
         path: 'NeuLucDo-tlinh2pillz-8783613.mp3',
         image: '1677482230509_640.jpg'
     },
     {
         id:6,
-        name:'thằng điên',
+        name:'Thằng điên',
         singer: 'JustaTee-PhuongLy',
         path: 'ThangDienLofiVersion-JustaTeePhuongLyNSRecords-7611741.mp3',
         image: 'artworks-000437920515-uq0j2a-t500x500.jpg'
     },
     {
         id:7,
-        name:'tại vì sao',
+        name:'Tại vì sao',
         singer: 'MCK',
         path: 'jibj864m97.mp3',
         image: '1679563297490_640.jpg'
@@ -64,10 +64,29 @@ const songs=[
     },
     {
         id:9,
-        name:'muốn nói với em',
+        name:'Muốn nói với em',
         singer: 'DT Tập Rap ft Mai Xuân Thứ',
         path: 'MuonNoiVoiEm-TTeam-6288870.mp3',
         image: '29bf1c15a2aeacf72a2fa1e84d92f3e9.jpg'
+    },
+    {
+        id:10,
+        name:'Lối nhỏ',
+        singer: ' Đen ft. Phương Anh Đào',
+        path: 'videoplayback-51.6-296.8.mp3',
+        image: 'artworks-KmWKZNH8tAE63LFz-9UiezA-t500x500.jpg'
+    },{
+        id:11,
+        name:'Sợ ngày mai em đi mất',
+        singer: 'Khải Đăng Ft Đạt G ',
+        path: 'NgayMaiEmDiMat-KhaiDangDatG-7747861.mp3',
+        image: '1661571586563_640.jpg'
+    },{
+        id:12,
+        name:'Một vòng Việt Nam',
+        singer: 'Tùng Dương',
+        path: 'MotVongVietNam-TungDuong-12080111.mp3',
+        image: 'maxresdefault.jpg'
     },
 ]
 let isVolume=true;
