@@ -173,25 +173,22 @@ function handle(){
         iVolume.onchange=function(){
             audio.volume=iVolume.value/100
             if(audio.volume<0.6&&audio.volume>=0.3){
-                if (iconVolume.classList.contains('fa-volume-high'))
                 iconVolume.classList.remove('fa-volume-high')
             iconVolume.classList.add( 'fa-volume-low')
+                iconVolume.classList.remove( 'fa-volume-xmark')
         }
         if(audio.volume<0.3){
             iconVolume.classList.add( 'fa-volume-off')
-            if (iconVolume.classList.contains('fa-volume-high'))
             iconVolume.classList.remove('fa-volume-high')
-        if (iconVolume.classList.contains('fa-volume-low'))
         iconVolume.classList.remove('fa-volume-low')
+            iconVolume.classList.remove( 'fa-volume-xmark')
 }
 if(audio.volume===0){
     iconVolume.classList.add( 'fa-volume-xmark')
-    if (iconVolume.classList.contains('fa-volume-high'))
     iconVolume.classList.remove('fa-volume-high')
-if (iconVolume.classList.contains('fa-volume-off'))
 iconVolume.classList.remove('fa-volume-off')
-if (iconVolume.classList.contains('fa-volume-low'))
 iconVolume.classList.remove('fa-volume-low')
+    iconVolume.classList.remove( 'fa-volume-xmark')
 }      
 }
     songRun.onchange=function(){
