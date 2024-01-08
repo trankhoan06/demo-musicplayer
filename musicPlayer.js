@@ -74,6 +74,7 @@ let isVolume=true;
 let isPlay=true;
 let ismusic=true;
 let numberId=0;
+let isVolumeValue=true;
 const playLists=document.querySelector('.playLists')
 const currenllyIndex=0;
 const songName=document.querySelector('.song-string')
@@ -87,7 +88,7 @@ const controlLoad= document.querySelector('.songControl.load')
 const controlPlaying=document.querySelector('.songControl.playing')
 const controlBackMusic= document.querySelector('.songControl.backMusic')
 const iVolume =document.querySelector('.volume')
-const icomVolume =document.querySelector('.iconVolume')
+const iconVolume =document.querySelector('.iconVolume')
 songName.textContent=songs[currenllyIndex].name,
 imgPlaylist.src=songs[currenllyIndex].image;
 audio.src=songs[currenllyIndex].path;
@@ -151,22 +152,46 @@ function handle(){
             handleNext()
         }
     }
-    iVolume.onchange=function(){
-        audio.volume=iVolume.value/100
-        if(audio.volume<60&&audio.volume>=30){
+    iconVolume.onclick=function(){
+        if(isVolumeValue){
+            isVolumeValue=false
+            audio.volume=0;
+            iVolume.value=0
+            iconVolume.classList.remove('fa-volume-high')
+            iconVolume.classList.add( 'fa-volume-xmark')
+        }
+        else{
+            isVolumeValue=true
+            audio.volume=1;
+            iVolume.value=100;
+            iconVolume.classList.remove( 'fa-volume-xmark')
+            iconVolume.classList.add('fa-volume-high')
+        }
+    }
+        iVolume.onchange=function(){
+            audio.volume=iVolume.value/100
+            if(audio.volume<0.6&&audio.volume>=0.3){
+                if (iconVolume.classList.contains('fa-volume-high'))
+                iconVolume.classList.remove('fa-volume-high')
             iconVolume.classList.add( 'fa-volume-low')
         }
-                if(audio.volume<30){
+        if(audio.volume<0.3){
             iconVolume.classList.add( 'fa-volume-off')
-                iconVolume.classList.remove('fa-volume-low')
-                }
-                if(audio.volume===0){
-                    iconVolume.classList.add( 'fa-volume-xmark')
-                    iconVolume.classList.remove('fa-volume-off')
-                    iconVolume.classList.remove('fa-volume-low')
-                }
-                
-    }
+            if (iconVolume.classList.contains('fa-volume-high'))
+            iconVolume.classList.remove('fa-volume-high')
+        if (iconVolume.classList.contains('fa-volume-low'))
+        iconVolume.classList.remove('fa-volume-low')
+}
+if(audio.volume===0){
+    iconVolume.classList.add( 'fa-volume-xmark')
+    if (iconVolume.classList.contains('fa-volume-high'))
+    iconVolume.classList.remove('fa-volume-high')
+if (iconVolume.classList.contains('fa-volume-off'))
+iconVolume.classList.remove('fa-volume-off')
+if (iconVolume.classList.contains('fa-volume-low'))
+iconVolume.classList.remove('fa-volume-low')
+}      
+}
     songRun.onchange=function(){
         audio.currentTime=songRun.value*audio.duration/100
     }
@@ -200,14 +225,14 @@ function handlesong(id){
 function getPlaying(){
     if(isPlay){
         isPlay=false,
-        controlPlaying.classList.remove('fa-play')
+    controlPlaying.classList.remove('fa-play')
         controlPlaying.classList.add('fa-pause')
         imgPlaylist.style.animationPlayState ='running',
     audio.play()
     }
     else{
         isPlay=true,
-    controlPlaying.classList.add('fa-play')
+        controlPlaying.classList.add('fa-play')
     controlPlaying.classList.remove('fa-pause')
     audio.pause()
     imgPlaylist.style.animationPlayState ='paused'
