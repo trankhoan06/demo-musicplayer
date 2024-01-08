@@ -155,7 +155,7 @@ function handle(){
         audio.volume=iVolume.value/100
         if(audio.volume<60&&audio.volume>=30){
             iconVolume.classList.add( 'fa-volume-low')
-            {
+        }
                 if(audio.volume<30){
             iconVolume.classList.add( 'fa-volume-off')
                 iconVolume.classList.remove('fa-volume-low')
