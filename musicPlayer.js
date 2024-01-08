@@ -87,6 +87,7 @@ const controlLoad= document.querySelector('.songControl.load')
 const controlPlaying=document.querySelector('.songControl.playing')
 const controlBackMusic= document.querySelector('.songControl.backMusic')
 const iVolume =document.querySelector('.volume')
+const icomVolume =document.querySelector('.iconVolume')
 songName.textContent=songs[currenllyIndex].name,
 imgPlaylist.src=songs[currenllyIndex].image;
 audio.src=songs[currenllyIndex].path;
@@ -152,6 +153,19 @@ function handle(){
     }
     iVolume.onchange=function(){
         audio.volume=iVolume.value/100
+        if(audio.volume<60&&audio.volume>=30){
+            iconVolume.classList.add( 'fa-volume-low')
+            {
+                if(audio.volume<30){
+            iconVolume.classList.add( 'fa-volume-off')
+                iconVolume.classList.remove('fa-volume-low')
+                }
+                if(audio.volume===0){
+                    iconVolume.classList.add( 'fa-volume-xmark')
+                    iconVolume.classList.remove('fa-volume-off')
+                    iconVolume.classList.remove('fa-volume-low')
+                }
+                
     }
     songRun.onchange=function(){
         audio.currentTime=songRun.value*audio.duration/100
@@ -186,13 +200,13 @@ function handlesong(id){
 function getPlaying(){
     if(isPlay){
         isPlay=false,
-        controlPlaying.classList.add('fa-solid' 'fa-play')
+        controlPlaying.classList.add('fa-solid', 'fa-play')
         imgPlaylist.style.animationPlayState ='running',
     audio.play()
     }
     else{
         isPlay=true,
-    controlPlaying.classList.remove('fa-solid' 'fa-play')
+    controlPlaying.classList.remove('fa-solid', 'fa-play')
     audio.pause()
     imgPlaylist.style.animationPlayState ='paused'
     }
