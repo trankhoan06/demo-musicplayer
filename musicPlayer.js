@@ -188,6 +188,7 @@ function handle(){
     }
         iVolume.onchange=function(){
             audio.volume=iVolume.value/100
+            isVolumeValue=true
             if(audio.volume<0.6&&audio.volume>=0.3){
                 iconVolume.classList.remove('fa-volume-high')
             iconVolume.classList.add( 'fa-volume-low')
