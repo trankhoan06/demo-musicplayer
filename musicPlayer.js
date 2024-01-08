@@ -105,7 +105,7 @@ function render(){
         <h4 style=" font-size: 20px;" >${song.name}</h4>
         <p>${song.singer}</p>
         </div>
-        <div class="ti-more-alt" style=" " ></div>
+        <div class="fa-solid fa-ellipsis" style=" " ></div>
         </div>
         </div>
         `
@@ -186,13 +186,13 @@ function handlesong(id){
 function getPlaying(){
     if(isPlay){
         isPlay=false,
-        controlPlaying.classList.add('fa-solid fa-play')
+        controlPlaying.classList.add('fa-solid' 'fa-play')
         imgPlaylist.style.animationPlayState ='running',
     audio.play()
     }
     else{
         isPlay=true,
-    controlPlaying.classList.remove('fa-solid fa-play')
+    controlPlaying.classList.remove('fa-solid' 'fa-play')
     audio.pause()
     imgPlaylist.style.animationPlayState ='paused'
     }
