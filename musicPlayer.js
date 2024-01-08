@@ -186,13 +186,13 @@ function handlesong(id){
 function getPlaying(){
     if(isPlay){
         isPlay=false,
-        controlPlaying.classList.add('ti-control-pause')
+        controlPlaying.classList.add('fa-solid fa-play')
         imgPlaylist.style.animationPlayState ='running',
     audio.play()
     }
     else{
         isPlay=true,
-    controlPlaying.classList.remove('ti-control-pause')
+    controlPlaying.classList.remove('fa-solid fa-play')
     audio.pause()
     imgPlaylist.style.animationPlayState ='paused'
     }
