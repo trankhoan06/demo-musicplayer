@@ -74,6 +74,7 @@
     border-radius: 6px;
     background-color: #F8F8FF;
     margin-bottom:20px ;
+    cursor: pointer;
 }
 .songControl.active{
     color: red;
